@@ -29,7 +29,7 @@ public class User {
 	@Column(name="name")
 	private String name;
 	
-	@NotEmpty
+	@NotNull
 	@Column(name="age")
 	private Integer age;
 	
