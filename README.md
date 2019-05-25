@@ -50,8 +50,9 @@ Working Functionalities
 ![regSuccess](https://user-images.githubusercontent.com/43248132/58158844-44c92300-7c49-11e9-987a-ddc5e4114981.JPG)
 
 
-Development Set-Up
+To run the application, Follow the steps below:
 
-1. Springboot 1.5
+1. mvn clean
+2. mvn build
 
 
