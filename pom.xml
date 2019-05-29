@@ -12,7 +12,7 @@
 	<artifactId>UserLogInRegistration</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>UserLoginReg</name>
-	<description>Login and Registration</description>
+	<description>Login and Registrations</description>
 
 	<properties>
 		<java.version>1.8</java.version>
