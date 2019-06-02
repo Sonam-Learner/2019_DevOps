@@ -1,1 +1,19 @@
-hi
+version: '3.0'
+services:
+  app:
+    image:gcitsonam/epharmacy:1.0.0
+    ports:
+      -8089:8089
+
+  epharmacy:
+    image:mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=epharmacy@123
+      - MYSQL_DATABASE=epharmacy_db
+      - MYSQL_USER=msit
+      - MYSQL_PASSWORD=msit
+    ports:
+      - 3306:3306
+    container_name: mysql
+      
+      
