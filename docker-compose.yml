@@ -5,8 +5,8 @@ services:
     ports:
       -8089:8089
 
-  epharmacy:
-    image:mysql:latest
+  mysql:
+    image: mysql:latest
     environment:
       - MYSQL_ROOT_PASSWORD=epharmacy@123
       - MYSQL_DATABASE=epharmacy_db
