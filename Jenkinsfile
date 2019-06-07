@@ -3,11 +3,11 @@ node{
     stage 'checkout'
     git branch: 'dev', url: 'https://github.com/Sonam-Learner/2019_DevOps.git'
     
-    stage 'compile package'
-    bat label: '', script: 'mvn clean package'
+    stage 'Build Docker Compose'
+    sh 'docker-compose build'
    
-    stage 'archival' 
-    archiveArtifacts 'target/*.jar'
+    stage 'Running Docker Compose' 
+    sh 'docker-compose up -d'
 
 }
 
