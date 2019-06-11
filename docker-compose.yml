@@ -14,8 +14,8 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=epharmacy@123
       - MYSQL_DATABASE=epharmacy_db
-      - MYSQL_USER=msit
-      - MYSQL_PASSWORD=msit
+      - MYSQL_USER=DevOps
+      - MYSQL_PASSWORD=devops@123
     ports:
       - "3307:3306"
     container_name: mysql
