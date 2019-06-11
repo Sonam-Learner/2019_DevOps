@@ -18,16 +18,16 @@ node{
           withCredentials([string(credentialsId: 'docker-pwd', variable: 'dockerHubPwd')]) {
             sh "docker login -u gcitsonam -p ${dockerHubPwd}"
           }
-          sh 'docker build -t gcitsoname/epharmacy:1.0.0 .'
+          sh 'docker build -t gcitsonam/epharmacy:1.0.0 .'
     
     stage 'Push Dcker Image'
           withCredentials([string(credentialsId: 'docker-pwd', variable: 'dockerHubPwd')]) {
-          sh "docker login -u msitdevops -p ${dockerHubPwd}"
+          sh "docker login -u gcitsonam -p ${dockerHubPwd}"
           }
-          sh 'docker push gcitsoname/epharmacy:1.0.0'
+          sh 'docker push gcitsonam/epharmacy:1.0.0'
     
     stage 'Run Container on Dev Server' 
-          sh 'docker run -p 8089:8089 -d gcitsoname/epharmacy:1.0.0'
+          sh 'docker run -p 8089:8089 -d gcitsonam/epharmacy:1.0.0'
 
 
 }
