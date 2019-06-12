@@ -3,7 +3,7 @@ services:
   app:
     build: .
     ports:
-      - "8089:8080"
+      - "8089:8090"
     command: mvn clean spring-boot:run
     depends_on:
       - mysql
