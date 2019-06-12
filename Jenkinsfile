@@ -4,11 +4,15 @@ node{
          git branch: 'dev', url: 'https://github.com/Sonam-Learner/2019_DevOps.git'
     
     stage 'Build Docker Compose'
-        sh 'docker-compose -f docker-compose.yml build'
-   
+        sh 'docker-compose build'
+    
+    stage 'Run application'
+        sh 'docker build Dockerfile .'
    
     stage 'Running Docker Compose' 
-         sh 'docker-compose -f docker-compose.yml up -d'
+        sh 'docker-compose up'
+    
+    
 
 
 }
