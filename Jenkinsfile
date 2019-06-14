@@ -6,8 +6,9 @@ node{
     
     stage('Compile-Package')
       // get maven home path
-      def mvnHome = tool name: 'maven-3', type: 'maven'
-      sh "${mvnHome}/bin/mvn package"
+      sh label: '', script: 'mvn package'
+      //def mvnHome = tool name: 'maven-3', type: 'maven'
+      //sh "${mvnHome}/bin/mvn package"
 
     
     stage 'Build Docker Compose'
