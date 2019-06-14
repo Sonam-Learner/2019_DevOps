@@ -1,9 +1,6 @@
 
 node{
-    tools{
-        maven 'maven 3'
-        jdk 'java 8'
-        }
+    tool name: 'maven-3', type: 'maven'
     stage 'checkout'
          git branch: 'dev', url: 'https://github.com/Sonam-Learner/2019_DevOps.git'
     
